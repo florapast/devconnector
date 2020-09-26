@@ -14,7 +14,7 @@ class CommentItem extends Component {
     return (
       <div className="card card-body mb-3 feed-bg">
         <div className="row">
-          <div className="col-md-2">
+          <div className="col-md-3">
             <a href="profile.html">
               <img
                 className="rounded-circle d-none d-md-block"
@@ -25,7 +25,7 @@ class CommentItem extends Component {
             <br />
             <p className="text-center user-name-color">{comment.name}</p>
           </div>
-          <div className="col-md-10">
+          <div className="col-md-9">
             <p className="lead">{comment.text}</p>
             {comment.user === auth.user.id ? (
               <button
